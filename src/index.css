@@ -53,6 +53,7 @@
   background-color: #e6e6e6;  
 }
 .description {
+  font-size: 16px;
   padding: 20px;
   width: 60%;
   text-align: justify;
@@ -230,7 +231,7 @@ margin: 100px;
   margin-bottom: 20px;
 }
 .row-container:last-child {
-  margin-bottom: 200px; /* ajusta la altura del margen inferior según sea necesario */
+  margin-bottom: 23vh; /* ajusta la altura del margen inferior según sea necesario */
 }
 .posters {
   
@@ -410,6 +411,19 @@ code {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+}
+a.license {
+  color: #fff; /* Cambia el color del texto a azul */
+  text-decoration: none; /* Elimina el subrayado del texto */
+}
+
+a.license:hover {
+  text-decoration: underline; /* Agrega un subrayado cuando el cursor pasa sobre el enlace */
+}
+.nav-text {
+  color: #fff;
+  text-decoration: none;
+  padding: 13px;
 }
 
 

@@ -33,19 +33,18 @@ console.log(movie)
       <div className="banner-content">
         <h1>{movie?.title || movie?.name || movie?.original_name}</h1>
         <div className="banner-button">
-          <Button variant="outline-light" onClick={handlePlay}>Play</Button>
-          <Button variant="outline-light" onClick={handlePause}>Stop</Button>
+          <Button variant="outline-light" onClick={handlePlay}>Reproducir música</Button>
+          <Button variant="outline-light" onClick={handlePause}>Parar la música</Button>
         </div>
         <div>
-          <h6 className="description" >
-            {(movie?.overview)}
-          </h6>
+          <h2 className="description" >
+            Resúmen de la película: <br></br>{(movie?.overview)}
+          </h2>
         </div>
         <div className="fadeBottom"></div>
       </div>
-      <audio ref={audioRef} src={buttonClickAudio}></audio>
+      <audio ref={audioRef} src={buttonClickAudio}><p>Un poco de música</p></audio>
     </div>
   );
 };
-
 export default Banner;

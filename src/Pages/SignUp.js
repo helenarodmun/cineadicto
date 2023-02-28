@@ -30,6 +30,7 @@ const SignUp = () => {
     <div className="signout">
       <h3>Inicio sesión</h3>
       <form className="formSignIn">
+        <label>Dirección de correo electrónico</label>
         <StyledInput
           value={email}
           type="email"
@@ -37,6 +38,7 @@ const SignUp = () => {
           placeholder="Email"
           className="email"
         />
+         <label>Contraseña</label>
         <StyledInput
           value={passwd}
           onChange={(e) => setPasswd(e.target.value)}

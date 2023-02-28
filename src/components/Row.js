@@ -66,7 +66,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
                   src={`${base_url}${
                     isLargeRow ? movie.poster_path : movie.backdrop_path
                   }`}
-                  alt={movie?.name}
+                  alt={movie?.overview.slice(0, 50)}
                 />
                 <div className="poster-title">
                   {movie?.name || movie?.title}

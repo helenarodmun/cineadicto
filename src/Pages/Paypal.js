@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { selectPrice } from '../features/PriceSlice'
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { StyledButton } from '../styled/styledcomponents';
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 const Paypal = (color, wide) => {
   const navigate = useNavigate();
   const handleClick = () => {    

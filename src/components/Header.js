@@ -16,12 +16,19 @@ const Header = () => {
               width="160"
               height="80"
               className="d-inline-block align-top navbar-brand"
-              alt="Logo de Cine Adicto"
+              alt="Logo de Cine Adicto con enlace a la página de Inicio"
             />
             </Link>
           </Navbar.Brand>
-          <Link to="/profile">
-          <FontAwesomeIcon className= 'nav-item'style={{color: 'white', fontSize: '30px', cursor:'pointer' }} icon="fa-regular fa-user" />
+          <Link to="/profile">  
+          <span 
+          className='nav-text'>Mi perfil</span>        
+          <FontAwesomeIcon 
+          className= 'nav-item'
+          style={{color: 'white', fontSize: '30px', cursor:'pointer' }} 
+          icon="fa-regular fa-user"  
+          aria-label='Entra en tu perfil'>          
+          </FontAwesomeIcon> 
           </Link>
         </Container>
       </Navbar>
